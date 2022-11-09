@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "swisscom-challenge"
+version = "0.1.0"
+description = "Hiring challenge for Python Developer position at Swisscom"
+authors = ["Eduardo Würch <ewurch@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/<your-username>/hypermodern-python"
+repository = "https://github.com/<your-username>/hypermodern-python"
+packages = [{include = "api", from = "src"}, {include = "cluster", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.86.0"
+uvicorn = {extras = ["standard"], version = "^0.19.0"}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+coverage = {extras = ["toml"], version = "^6.5.0"}
+pytest-cov = "^4.0.0"
+requests = "^2.28.1"
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["api", "cluster"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 90
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
