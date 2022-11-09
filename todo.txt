@@ -1,2 +1,6 @@
 to do:
-- Create theoretical CLUSTER
+
+doing:
+
+done:
+- Create theoretical cluster
