@@ -1,4 +1,4 @@
-[![Tests](https://github.com/ewurch/swisscom-challenge/workflows/Tests/badge.svg)](https://github.com/ewurch/swisscom-challenge/actions?workflow=Tests)
+[![Tests](https://github.com/ewurch/swisscom-challenge/actions/workflows/main.yml/badge.svg)](https://github.com/ewurch/swisscom-challenge/actions/workflows/main.yml/)
 
 Hiring Challenge - Swisscom
 ===========
