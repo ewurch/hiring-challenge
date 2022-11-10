@@ -1,6 +1,6 @@
 Hiring Challenge 
 ===========
-[![Tests](https://github.com/ewurch/swisscom-challenge/actions/workflows/main.yml/badge.svg)](https://github.com/ewurch/swisscom-challenge/actions/workflows/main.yml/)
+[![Tests](https://github.com/ewurch/hiring-challenge/actions/workflows/main.yml/badge.svg)](https://github.com/ewurch/hiring-challenge/actions/workflows/main.yml/)
 
 ## Rationale
 
