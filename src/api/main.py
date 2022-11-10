@@ -26,7 +26,7 @@ def add_node(node: Node):
 @v1.delete("/node")
 def remove_node(node: Node):
     try:
-        return remove_node(node)
+        return cluster.remove_node(node)
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
 

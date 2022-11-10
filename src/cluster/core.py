@@ -97,8 +97,6 @@ class Cluster(BaseModel):
     def add_node(self, node: Node) -> Node:
         """Adds a node to the cluster, if the node already exists, it will raise an exception"""
         if node not in self.nodes:
-            if self.nodes:
-                node.groups = self.nodes[0].groups
             self.nodes.append(node)
             return node
         else:
