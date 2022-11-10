@@ -1,4 +1,4 @@
-name: Swisscom Challenge
+name: Tests
 
 on: [push]
 
