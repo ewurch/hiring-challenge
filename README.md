@@ -8,7 +8,7 @@ Hiring Challenge
 The approach I took was to build a theoretical cluster of nodes, using Pydantic models I could enforce type hints and create custom validations for each one of the components. Since the Pydantic BaseModel is an extension of python's dataclasses, I could still build methods for each one of the classes, keeping the components with their own responsibilities (data manipulation, data validations, and cluster consistency enforcement in the case of instabilities and connection timeouts).
 
 ### The API
-To Interact with the cluster I built an interface using FastAPI, it's integration with Pydantic allows for type hints on the endpoint definition and interactive docs at the `/v1/docs`.
+To Interact with the cluster I built an interface using FastAPI, it's integration with Pydantic allows for type hints on the endpoint definition minizing the need for extra documentation writing. All endpoints are set work at the `/v1` subroute and interactive docs at the `/v1/docs`.
 
 
 ## Building and Running
