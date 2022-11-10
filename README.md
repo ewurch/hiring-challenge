@@ -20,6 +20,8 @@ So all the dependencies are on the poetry files and to run the app is recommende
 ## Usage Guide:
 Once the API is running is possible to interact with the cluster, the cluster is not persistent so on each startup you get an empty cluster to interact with.
 
+On this usage guide you will learn how to interact with the API using the requests library, but is also possible to use it through the interface provided on `/v1/docs`.
+
 ```python
 >>> import requests
 >>> response = requests.get('http://localhost:8000/v1/')
